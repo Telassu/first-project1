@@ -8,15 +8,14 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
-div, section, article, p {
+/*div, section, article, p {
   border: 1px solid red;
-  }
+  }*/
 
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
   box-sizing: border-box;
   display: flex;
   position: relative;
@@ -66,9 +65,6 @@ div, section, article, p {
   position: absolute;
   right: 0;
   bottom: 0;
-  background-image: url(../images/header-image.png);
-  background-size: cover;
-  background-repeat: no-repeat;
   margin: 0;
   z-index: 3;
 }
@@ -99,7 +95,6 @@ div, section, article, p {
   width: 80%;
   display: flex;
   justify-content: center;
-
 }
 
 .two-columns {
@@ -112,7 +107,6 @@ div, section, article, p {
 .two-columns_brief {
   width: 175px;
   min-height: 1.2px;
-
 }
 
 .two-columns_brief__title {
@@ -130,11 +124,11 @@ div, section, article, p {
 }
 
 .two-columns_paragraph {
-margin: 0;
-font-size: 24px;
-font-weight: normal;
-min-height: 34px;
-text-align: justify;
+  margin: 0;
+  font-size: 24px;
+  font-weight: normal;
+  min-height: 34px;
+  text-align: justify;
 }
 
 .span_accent {
