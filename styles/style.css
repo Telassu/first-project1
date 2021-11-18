@@ -8,19 +8,19 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
-section {
-  border: 1px solid blue;
-}
+div, section, article, p {
+  border: 1px solid red;
+  }
 
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
-  background-color: #f2f2f2;
   box-sizing: border-box;
   display: flex;
   position: relative;
+  background-color: #f2f2f2;
 }
 
 .logo {
@@ -33,9 +33,9 @@ section {
 
 .logo_place_header {
   position: absolute;
-  z-index: 6;
   margin-top: 30px;
   margin-left: 64px;
+  z-index: 6;
 }
 
 .header__title {
@@ -85,12 +85,65 @@ section {
 .link {
   font-size: 18px;
   font-weight: normal;
+  color: #2f80ed;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
+.content {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.description {
+  margin: 100px 100px 0;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.two-columns {
+  min-height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.two-columns_brief {
+  width: 175px;
+  min-height: 1.2px;
+
+}
+
+.two-columns_brief__title {
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+}
+
+.two-columns_main-text {
+  width: 80%;
+  min-width: 784px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.two-columns_paragraph {
+margin: 0;
+font-size: 24px;
+font-weight: normal;
+min-height: 34px;
+text-align: justify;
+}
+
+.span_accent {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.two-columns_paragraph_span {
+  margin: 30px 0;
 }
 
 /* и элемента с модификатором вида ключ-значение */
